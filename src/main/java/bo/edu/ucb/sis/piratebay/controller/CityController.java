@@ -26,7 +26,7 @@ public class CityController {
 
     @RequestMapping(method = RequestMethod.GET,
             produces = MediaType.APPLICATION_JSON_VALUE)
-    public FindCitiesReturn findCities() { // bearer asdasdasdasd
+    public FindCitiesReturn findCities() {
         List<CityModel> colCities =  this.cityBl.findAllCities();
         FindCitiesReturn ObjReturn = new FindCitiesReturn();
         ObjReturn.setErrorcode(0);
