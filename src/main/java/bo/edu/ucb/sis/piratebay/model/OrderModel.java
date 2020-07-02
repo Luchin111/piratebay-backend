@@ -16,13 +16,12 @@ public class OrderModel {
     public OrderModel() {
     }
 
-    public OrderModel(Integer order_id, Integer person_id, String first_name, String first_surname, String direction, Integer order_user_id, String date, Integer status, Integer quantity) {
+    public OrderModel(Integer order_id, Integer person_id, String first_name, String first_surname, String direction, String date, Integer status, Integer quantity) {
         this.order_id = order_id;
         this.person_id = person_id;
         this.first_name = first_name;
         this.first_surname = first_surname;
         this.direction = direction;
-        this.order_user_id = order_user_id;
         this.date = date;
         this.status = status;
         this.quantity = quantity;

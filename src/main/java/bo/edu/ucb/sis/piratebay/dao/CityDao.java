@@ -21,7 +21,7 @@ public class CityDao {
 
     public List<CityModel> findAllCities() {
 
-        String query = "SELECT city_id, name_city, status FROM \"city\" WHERE status = 1";
+        String query = "SELECT warehouse_id, warehouse_name, status FROM \"warehouse\" WHERE status = 1";
         List<CityModel> result = null;
         try {
             result = jdbcTemplate.query(query, new RowMapper<CityModel>() {
